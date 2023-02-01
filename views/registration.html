@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Newsletter</title>
+    <link rel="stylesheet" type="text/css" href="../static/registrationstyle.css">
+   	<link rel="stylesheet" href="https://fonts.google.com/specimen/Source+Code+Pro&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">   	
+  </head>
+  <body>
+  <div class=main-container>
+      <header>
+      <h1>Spacehship Exchange SSE</h1>
+    </header>
+ 		<video class="background-video" autoplay loop muted>
+    	<source src=../video/newsletter-background.mp4>
+    </video>
+    <nav>
+      <button id="home-btn">Home</button>
+      <button id="newsletter-btn">Newsletter</button>
+      <button id="about-btn">About</button>
+      <button id="contact-btn">Contact</button>
+      <button id="sign-out-btn">Sign Out</button>
+    </nav>
+    <div class="form-container">
+      <form id="newsletter-form">
+      <h2>Newsletter</h2>
+        <div class="input-container">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-container">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-container">
+          <label for="subject">You heard about us from:</label>
+	          <div class="dropdown">
+						  <button class="dropdown-btn">Choose</button>
+						  <div class="dropdown-content">
+						    <a onclick="document.querySelector('.dropdown-btn').innerHTML = 'Alpha Quadrant';">Alpha Quadrant</a>
+						    <a onclick="document.querySelector('.dropdown-btn').innerHTML = 'Beta Quadrant';">Beta Quadrant</a>
+						    <a onclick="document.querySelector('.dropdown-btn').innerHTML = 'Gamma Quadrant';">Gamma Quadrant</a>
+						  </div>
+						</div>
+        </div>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </div>
+    <script type="text/javascript" src="../scripts/registrationscript.js"></script>
+    </div>
+  </body>
+</html>
